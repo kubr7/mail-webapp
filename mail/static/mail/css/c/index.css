@@ -1,0 +1,203 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: linear-gradient(to right, #b6fbff, #83a4d4);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  max-width: 100%;
+  height: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo img {
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.user-email p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  letter-spacing: -3px;
+  font-family: monospace;
+}
+
+section {
+  display: block;
+}
+
+.view {
+  display: block;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-buttons {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#actions {
+  width: 100%;
+  height: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.menu-btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu-btn:hover {
+  outline: thick double #007bff;
+  /* border-radius: 2rem; */
+  color: #fff;
+  border-color: #007bff;
+  background-color: #007bff;
+
+}
+
+.menu-btn a:hover {
+  color: #fff;
+}
+
+.myCheck {
+  width: 16px;
+  height: 16px;
+  margin: 0.5rem 1.5rem;
+}
+
+.action-btn {
+  width: 8rem;
+  margin-left: 0.6rem;
+}
+
+.read {
+  cursor: pointer;
+  font-weight: 400;
+  /* background-color: red; */
+}
+
+.unread {
+  cursor: pointer;
+  font-weight: 600;
+  /* background-color: green; */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50px 200px auto 100px;
+  /* background-color: #2196f3; */
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* padding: 0.5rem 1rem 5px 1rem; */
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+}
+
+.email-body {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.email-body-body {
+  /* margin-top: 2rem; */
+  padding: 1rem 0 2rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.user-action {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* background-color: blue; */
+}
+
+.footer_copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: gray;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#eachEmails-views {
+  max-height: 60vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+#emails-view p, #compose-view p {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#emails-view > div {
+  padding: 1px;
+  margin: 1px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#emails-view > div:hover {
+  background-color: red;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+

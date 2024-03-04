@@ -1,0 +1,240 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: linear-gradient(to right, #b6fbff, #83a4d4);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  max-width: 100%;
+  height: 5rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+header .logo img {
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+header .user-email p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+  cursor: pointer;
+  letter-spacing: -3px;
+  font-family: monospace;
+}
+
+section .view {
+  padding: 0 8rem;
+  margin: 0 auto;
+}
+section .view .menu-buttons,
+section .view #actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .view .menu-buttons .action-btn,
+section .view .menu-buttons .menu-btn,
+section .view .menu-buttons .arch-btn,
+section .view .menu-buttons .del-btn,
+section .view .menu-buttons .mark-as-read-btn,
+section .view .menu-buttons .mark-as-imp-btn,
+section .view .menu-buttons .spam-btn,
+section .view #actions .action-btn,
+section .view #actions .menu-btn,
+section .view #actions .arch-btn,
+section .view #actions .del-btn,
+section .view #actions .mark-as-read-btn,
+section .view #actions .mark-as-imp-btn,
+section .view #actions .spam-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+section .view .menu-buttons .action-btn:hover,
+section .view .menu-buttons .menu-btn:hover,
+section .view .menu-buttons .arch-btn:hover,
+section .view .menu-buttons .del-btn:hover,
+section .view .menu-buttons .mark-as-read-btn:hover,
+section .view .menu-buttons .mark-as-imp-btn:hover,
+section .view .menu-buttons .spam-btn:hover,
+section .view #actions .action-btn:hover,
+section .view #actions .menu-btn:hover,
+section .view #actions .arch-btn:hover,
+section .view #actions .del-btn:hover,
+section .view #actions .mark-as-read-btn:hover,
+section .view #actions .mark-as-imp-btn:hover,
+section .view #actions .spam-btn:hover {
+  outline: thick double #007bff;
+  color: #fff;
+  background-color: #007bff;
+}
+section .view .menu-buttons .action-btn a,
+section .view .menu-buttons .menu-btn a,
+section .view .menu-buttons .arch-btn a,
+section .view .menu-buttons .del-btn a,
+section .view .menu-buttons .mark-as-read-btn a,
+section .view .menu-buttons .mark-as-imp-btn a,
+section .view .menu-buttons .spam-btn a,
+section .view #actions .action-btn a,
+section .view #actions .menu-btn a,
+section .view #actions .arch-btn a,
+section .view #actions .del-btn a,
+section .view #actions .mark-as-read-btn a,
+section .view #actions .mark-as-imp-btn a,
+section .view #actions .spam-btn a {
+  text-decoration: none;
+  color: #000;
+}
+section .view .menu-buttons .action-btn a:hover,
+section .view .menu-buttons .menu-btn a:hover,
+section .view .menu-buttons .arch-btn a:hover,
+section .view .menu-buttons .del-btn a:hover,
+section .view .menu-buttons .mark-as-read-btn a:hover,
+section .view .menu-buttons .mark-as-imp-btn a:hover,
+section .view .menu-buttons .spam-btn a:hover,
+section .view #actions .action-btn a:hover,
+section .view #actions .menu-btn a:hover,
+section .view #actions .arch-btn a:hover,
+section .view #actions .del-btn a:hover,
+section .view #actions .mark-as-read-btn a:hover,
+section .view #actions .mark-as-imp-btn a:hover,
+section .view #actions .spam-btn a:hover {
+  color: #fff;
+}
+section .view .menu-buttons .arch-btn:hover,
+section .view .menu-buttons .spam-btn:hover,
+section .view #actions .arch-btn:hover,
+section .view #actions .spam-btn:hover {
+  outline: thick double #bb2124;
+  background-color: #bb2124;
+}
+section .view #emails-views #emails-view > div {
+  padding: 1px;
+  margin: 1px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+section .view #emails-views #emails-view > div:hover {
+  background-color: red;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+section .view #emails-views #emails-view p {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+section .view #emails-views #eachEmails-views {
+  max-height: 60vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+section .view #emails-views #eachEmails-views .grid-container {
+  display: grid;
+  grid-template-columns: 50px 200px auto 100px;
+}
+section .view #emails-views #eachEmails-views .grid-container .myCheck {
+  width: 16px;
+  height: 16px;
+  margin: 0.5rem 1.5rem;
+}
+section .view #emails-views #eachEmails-views .grid-container .grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+}
+section .view #email-detail-view .email-body {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+section .view #email-detail-view .email-body .email-body-item {
+  padding: 1rem;
+}
+section .view #email-detail-view .email-body .email-body-body {
+  padding: 1rem 0 2rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+section .view #email-detail-view .user-action {
+  display: flex;
+  justify-content: space-between;
+}
+section .view #compose-view p {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+section .view #compose-view #compose-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 60%;
+  margin: auto;
+}
+section .view #compose-view #compose-form .form-control {
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  outline: 1px solid #007bff;
+  border: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  padding: 0;
+  text-indent: 7px;
+}
+section .view #compose-view #compose-form textarea {
+  min-height: 200px;
+}
+section .view #compose-view #compose-form .send-btn {
+  font-weight: 600;
+  width: 8rem;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  margin: auto;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+  border-color: #007bff;
+}
+section .view #compose-view #compose-form .send-btn:hover {
+  outline: thick double #22bb33;
+  color: #fff;
+  background-color: #22bb33;
+}
+section .view #compose-view #compose-form .send-btn a {
+  text-decoration: none;
+  color: #000;
+}
+section .view #compose-view #compose-form .send-btn a:hover {
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+footer .footer_copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

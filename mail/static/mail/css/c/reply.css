@@ -1,0 +1,28 @@
+.reply-btn {
+  font-weight: 600;
+  width: 6rem;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  margin-left: 0.6rem;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.reply-btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+.reply-btn:hover {
+  outline: thick double #007bff;
+  /* border-radius: 2rem; */
+  color: #fff;
+  border-color: #007bff;
+  background-color: #007bff;
+}
+
+.reply-btn a:hover {
+  color: #fff;
+}

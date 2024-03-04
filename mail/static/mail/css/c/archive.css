@@ -1,0 +1,53 @@
+.archive-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.archive-btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+.archive-btn:hover {
+  outline: thick double #003366;
+  /* border-radius: 2rem; */
+  color: #fff;
+  /* border-color: #007bff; */
+  background-color: #003366;
+}
+
+.archive-btn a:hover {
+  color: #fff;
+}
+
+.unarchive-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.unarchive-btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+.unarchive-btn:hover {
+  outline: thick double #bb2124;
+  /* border-radius: 2rem; */
+  color: #fff;
+  /* border-color: #007bff; */
+  background-color: #bb2124;
+}
+
+.unarchive-btn a:hover {
+  color: #fff;
+}

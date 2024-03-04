@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}Mail{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'mail/css/mai.css' %}" />
+    <link rel="stylesheet" href="{% static 'mail/css/log.css' %}" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img class="" src="{% static 'mail/images/mail.png' %}" />
+      </div>
+      <div class="user-email">
+        <p>{{ request.user.email }}</p>
+      </div>
+    </header>
+    <section id="section">{% block section %} {% endblock %}</section>
+    <footer>
+      <div class="footer_copyright">
+        <p>&copy; 2023 e-mail Inc. || All rights reserved</p>
+      </div>
+    </footer>
+    {% block script %}
+    <script src="{% static 'mail/js/index.js' %}"></script>
+    {% comment %} <script src="{% static 'mail/js/actions.js' %}"></script> {% endcomment %}
+    {% endblock %}
+  </body>
+</html>

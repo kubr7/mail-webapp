@@ -1,0 +1,536 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  max-width: 100%;
+  height: 10vh;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+header .logo img {
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+header .user-email p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+  cursor: pointer;
+  letter-spacing: -3px;
+  font-family: monospace;
+}
+
+section {
+  height: 79.5vh;
+  margin-top: 2rem;
+}
+section .view {
+  margin: 0 4rem;
+}
+section .view .menu-buttons {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7d0a0a;
+}
+section .view .menu-buttons .action-btn {
+  width: 8rem;
+  max-width: 100%;
+  margin: 0.6rem;
+}
+section .view .menu-buttons .menu-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+section .view .menu-buttons .menu-btn:hover {
+  color: #fff;
+  background-color: #7d0a0a;
+}
+section .view .menu-buttons .menu-btn:hover {
+  outline: solid #eeeded;
+}
+section .view .menu-buttons .menu-btn a {
+  text-decoration: none;
+  color: #000;
+}
+section .view .menu-buttons .menu-btn a:hover {
+  color: #fff;
+}
+section .view .menu-buttons #logout:hover #link {
+  color: #fff;
+}
+section .view #actions {
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: calc(100% - 16rem);
+  background-color: #7d0a0a;
+}
+section .view #actions .action-btn {
+  width: 8rem;
+  margin: 0.6rem;
+}
+section .view #actions .mark-as-read-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  height: 1rem;
+  font-size: 10px;
+}
+section .view #actions .mark-as-read-btn:hover {
+  color: #fff;
+  background-color: #7d0a0a;
+}
+section .view #actions .mark-as-read-btn:hover {
+  outline: solid #eeeded;
+}
+section .view #actions .mark-as-read-btn a {
+  text-decoration: none;
+  color: #000;
+}
+section .view #actions .mark-as-read-btn a:hover {
+  color: #fff;
+}
+section .view #actions .mark-as-imp-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  height: 1rem;
+  font-size: 10px;
+}
+section .view #actions .mark-as-imp-btn:hover {
+  color: #fff;
+  background-color: #7d0a0a;
+}
+section .view #actions .mark-as-imp-btn:hover {
+  outline: solid #eeeded;
+}
+section .view #actions .mark-as-imp-btn a {
+  text-decoration: none;
+  color: #000;
+}
+section .view #actions .mark-as-imp-btn a:hover {
+  color: #fff;
+}
+section .view #actions .spam-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  height: 1rem;
+  font-size: 10px;
+}
+section .view #actions .spam-btn:hover {
+  color: #fff;
+  background-color: #7d0a0a;
+}
+section .view #actions .spam-btn:hover {
+  outline: solid #eeeded;
+}
+section .view #actions .spam-btn a {
+  text-decoration: none;
+  color: #000;
+}
+section .view #actions .spam-btn a:hover {
+  color: #fff;
+}
+section .view #actions .arch-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  height: 1rem;
+  font-size: 10px;
+}
+section .view #actions .arch-btn:hover {
+  color: #fff;
+  background-color: #7d0a0a;
+}
+section .view #actions .arch-btn:hover {
+  outline: solid #eeeded;
+}
+section .view #actions .arch-btn a {
+  text-decoration: none;
+  color: #000;
+}
+section .view #actions .arch-btn a:hover {
+  color: #fff;
+}
+section .view #actions .del-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  height: 1rem;
+  font-size: 10px;
+}
+section .view #actions .del-btn:hover {
+  color: #fff;
+  background-color: #7d0a0a;
+}
+section .view #actions .del-btn:hover {
+  outline: solid #eeeded;
+}
+section .view #actions .del-btn a {
+  text-decoration: none;
+  color: #000;
+}
+section .view #actions .del-btn a:hover {
+  color: #fff;
+}
+section .view #actions .selectAll-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  height: 1rem;
+  font-size: 10px;
+}
+section .view #actions .selectAll-btn:hover {
+  color: #fff;
+  background-color: #7d0a0a;
+}
+section .view #actions .selectAll-btn:hover {
+  outline: solid #eeeded;
+}
+section .view #actions .selectAll-btn a {
+  text-decoration: none;
+  color: #000;
+}
+section .view #actions .selectAll-btn a:hover {
+  color: #fff;
+}
+section .view #emails-views {
+  margin-top: 2.6rem;
+  background-color: #7d0a0a;
+}
+section .view #emails-views #emails-view > div {
+  padding: 1px;
+  margin: 1px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+section .view #emails-views #emails-view > div:hover {
+  background-color: red;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+section .view #emails-views #emails-view p {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+section .view #emails-views #eachEmails-views {
+  max-height: 50vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+section .view #emails-views #eachEmails-views .grid-container {
+  display: grid;
+  grid-template-columns: 50px 200px auto 100px;
+}
+section .view #emails-views #eachEmails-views .grid-container .grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* padding: 0.5rem 1rem 5px 1rem; */
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+}
+section .view #email-detail-view {
+  display: block;
+  max-width: 70rem;
+  margin: auto;
+}
+section .view #email-detail-view .email-body {
+  width: auto;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 2rem;
+  background-color: beige;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+section .view #email-detail-view .email-body .email-body-body {
+  padding: 1rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+section .view #email-detail-view .user-action {
+  display: flex;
+  justify-content: space-between;
+}
+section .view #email-detail-view .user-action .reply-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  width: 8rem;
+  margin: 0.6rem;
+}
+section .view #email-detail-view .user-action .reply-btn:hover {
+  color: #fff;
+  background-color: #7d0a0a;
+}
+section .view #email-detail-view .user-action .reply-btn a {
+  text-decoration: none;
+  color: #000;
+}
+section .view #email-detail-view .user-action .reply-btn a:hover {
+  color: #fff;
+}
+section .view #email-detail-view .user-action .archive-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  width: 8rem;
+  margin: 0.6rem;
+}
+section .view #email-detail-view .user-action .archive-btn:hover {
+  color: #fff;
+  background-color: #7d0a0a;
+}
+section .view #email-detail-view .user-action .archive-btn a {
+  text-decoration: none;
+  color: #000;
+}
+section .view #email-detail-view .user-action .archive-btn a:hover {
+  color: #fff;
+}
+section .view #email-detail-view .user-action .unarchive-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  width: 8rem;
+  margin: 0.6rem;
+}
+section .view #email-detail-view .user-action .unarchive-btn:hover {
+  color: #fff;
+  background-color: #7d0a0a;
+}
+section .view #email-detail-view .user-action .unarchive-btn a {
+  text-decoration: none;
+  color: #000;
+}
+section .view #email-detail-view .user-action .unarchive-btn a:hover {
+  color: #fff;
+}
+section .view #email-detail-view .user-action .delete-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  width: 8rem;
+  margin: 0.6rem;
+}
+section .view #email-detail-view .user-action .delete-btn:hover {
+  color: #fff;
+  background-color: #7d0a0a;
+}
+section .view #email-detail-view .user-action .delete-btn a {
+  text-decoration: none;
+  color: #000;
+}
+section .view #email-detail-view .user-action .delete-btn a:hover {
+  color: #fff;
+}
+section .view #compose-view {
+  width: auto;
+  height: 60vh;
+  margin-top: 2.6rem;
+  background-color: darkred;
+}
+section .view #compose-view p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+section .view #compose-view #compose-form {
+  width: 55rem;
+  margin: 1rem auto;
+}
+section .view #compose-view #compose-form .form-control {
+  width: 55rem;
+  height: calc(1.5em + 0.75rem + 2px);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  outline: 1px solid #e5e4e2;
+  border: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  padding: 0;
+  text-indent: 7px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+section .view #compose-view #compose-form textarea {
+  min-height: 200px;
+}
+section .view #compose-view #compose-form .send-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  width: 8rem;
+  margin-top: 1rem;
+}
+section .view #compose-view #compose-form .send-btn:hover {
+  color: #fff;
+  background-color: #dc0000;
+}
+section .view #compose-view #compose-form .send-btn:hover {
+  margin-left: 3px;
+  outline: thick double #eeeded;
+}
+section .view #compose-view #compose-form .send-btn a {
+  text-decoration: none;
+  color: #000;
+}
+section .view #compose-view #compose-form .send-btn a:hover {
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  height: 8vh;
+  bottom: 0;
+  position: relative;
+  background-color: #7d0a0a;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* background-color: blue; */
+}
+footer .footer_copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.read {
+  cursor: pointer;
+  font-weight: 400;
+  background-color: #e5e4e2;
+}
+
+.unread {
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #848884;
+}
+
+/* For WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7d0a0a;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f3edc8;
+}
+
+/* For Firefox */
+* {
+  scrollbar-color: #a0a0a0 #f0f0f0;
+  scrollbar-width: thin;
+}
+
+/* You can use the following to style the scrollbar thumb in Firefox */
+*::-moz-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+/* You can use the following to style the scrollbar track in Firefox */
+*::-moz-scrollbar-track {
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  section .view {
+    margin: 0;
+  }
+  #email-detail-view {
+    width: 100%;
+  }
+  #compose-view {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .action-btn {
+    width: 6rem;
+  }
+  #compose-view {
+    width: 80%;
+  }
+}/*# sourceMappingURL=mai.css.map */

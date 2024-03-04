@@ -1,0 +1,71 @@
+.login-page {
+  width: 50rem;
+  height: auto;
+  margin: auto;
+  margin-top: 5rem;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+.login-page .login-heading {
+  text-align: center;
+}
+.login-page .login-form {
+  width: auto;
+  height: auto;
+}
+.login-page .login-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-page .login-form form .form-control {
+  display: block;
+  width: 25rem;
+  height: calc(1.5em + 0.75rem + 2px);
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  outline: 1px solid #007bff;
+  border: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  padding: 0;
+  text-indent: 7px;
+}
+.login-page .login-form form .login-btn {
+  font-weight: 600;
+  cursor: pointer;
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+.login-page .login-form form .login-btn:hover {
+  outline: thick double green;
+  color: #fff;
+  background-color: green;
+}
+.login-page .login-form form .login-btn a {
+  text-decoration: none;
+  color: #000;
+}
+.login-page .login-form form .login-btn a:hover {
+  color: #fff;
+}
+.login-page .login-form .misc-links {
+  padding: 2rem;
+  text-align: center;
+}
+.login-page .login-form .misc-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}/*# sourceMappingURL=log.css.map */

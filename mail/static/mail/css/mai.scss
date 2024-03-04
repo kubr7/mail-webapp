@@ -1,0 +1,539 @@
+$primary-color: #7d0a0a;
+// $primary-color: #007bff;
+$secondary-color: #bb2124;
+$tertiary-color: #003366;
+$success-color: #22bb33;
+$send-btn-color: #dc0000;
+$outline: #eeeded;
+$background-gradient: linear-gradient(to right, #b6fbff, #83a4d4);
+$box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+@mixin button-style {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+@mixin user-action-btn-style {
+  width: 8rem;
+  margin: 0.6rem;
+}
+
+@mixin action-button-style {
+  height: 1rem;
+  font-size: 10px;
+}
+
+@mixin hover-effect($background) {
+  &:hover {
+    color: #fff;
+    background-color: $background;
+  }
+}
+
+@mixin hover-outline-effect($outline) {
+  &:hover {
+    outline: solid $outline;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  // margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  max-width: 100%;
+  height: 10vh;
+  padding: 0 2rem;
+  margin: 0 auto;
+
+  .logo img {
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+
+  .user-email p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    cursor: pointer;
+    letter-spacing: -3px;
+    font-family: monospace;
+  }
+}
+
+section {
+  height: 79.5vh;
+  margin-top: 2rem;
+  .view {
+    margin: 0 4rem;
+
+    .menu-buttons {
+      height: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $primary-color;
+
+      .action-btn {
+        width: 8rem;
+        max-width: 100%;
+        margin: 0.6rem;
+      }
+
+      .menu-btn {
+        @include button-style;
+        @include hover-effect($primary-color);
+        @include hover-outline-effect($outline);
+
+        a {
+          text-decoration: none;
+          color: #000;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+
+      #logout:hover #link {
+        color: #fff;
+      }
+    }
+
+    #actions {
+      height: auto;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      width: calc(100% - 16rem);
+      background-color: $primary-color;
+
+      .action-btn {
+        width: 8rem;
+        margin: 0.6rem;
+      }
+
+      .mark-as-read-btn {
+        @include button-style;
+        @include action-button-style;
+        @include hover-effect($primary-color);
+        @include hover-outline-effect($outline);
+
+        a {
+          text-decoration: none;
+          color: #000;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+
+      .mark-as-imp-btn {
+        @include button-style;
+        @include action-button-style;
+        @include hover-effect($primary-color);
+        @include hover-outline-effect($outline);
+
+        a {
+          text-decoration: none;
+          color: #000;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+
+      .spam-btn {
+        @include button-style;
+        @include action-button-style;
+        @include hover-effect($primary-color);
+        @include hover-outline-effect($outline);
+
+        a {
+          text-decoration: none;
+          color: #000;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+
+      .arch-btn {
+        @include button-style;
+        @include action-button-style;
+        @include hover-effect($primary-color);
+        @include hover-outline-effect($outline);
+
+        a {
+          text-decoration: none;
+          color: #000;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+
+      .del-btn {
+        @include button-style;
+        @include action-button-style;
+        @include hover-effect($primary-color);
+        @include hover-outline-effect($outline);
+
+        a {
+          text-decoration: none;
+          color: #000;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+
+      .selectAll-btn {
+        @include button-style;
+        @include action-button-style;
+        @include hover-effect($primary-color);
+        @include hover-outline-effect($outline);
+
+        a {
+          text-decoration: none;
+          color: #000;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    #emails-views {
+      margin-top: 2.6rem;
+      background-color: #7d0a0a;
+
+      #emails-view {
+        > div {
+          padding: 1px;
+          margin: 1px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+          &:hover {
+            background-color: red;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          }
+        }
+
+        p {
+          padding-left: 1rem;
+          padding-top: 1rem;
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+      }
+
+      #eachEmails-views {
+        max-height: 50vh;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
+          0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
+        .grid-container {
+          display: grid;
+          grid-template-columns: 50px 200px auto 100px;
+
+          .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            /* padding: 0.5rem 1rem 5px 1rem; */
+            padding: 0.5rem 1rem;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    #email-detail-view {
+      display: block;
+      max-width: 70rem;
+      margin: auto;
+
+      .email-body {
+        width: auto;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 2rem;
+        background-color: beige;
+        border-radius: 1rem;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
+          0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
+        .email-body-body {
+          padding: 1rem 0;
+          border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .user-action {
+        display: flex;
+        justify-content: space-between;
+
+        .reply-btn {
+          @include button-style;
+          @include user-action-btn-style;
+          @include hover-effect($primary-color);
+
+          a {
+            text-decoration: none;
+            color: #000;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+        .archive-btn {
+          @include button-style;
+          @include user-action-btn-style;
+          @include hover-effect($primary-color);
+
+          a {
+            text-decoration: none;
+            color: #000;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+        .unarchive-btn {
+          @include button-style;
+          @include user-action-btn-style;
+          @include hover-effect($primary-color);
+
+          a {
+            text-decoration: none;
+            color: #000;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+        .delete-btn {
+          @include button-style;
+          @include user-action-btn-style;
+          @include hover-effect($primary-color);
+
+          a {
+            text-decoration: none;
+            color: #000;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    #compose-view {
+      width: auto;
+      height: 60vh;
+      margin-top: 2.6rem;
+      background-color: darkred;
+
+      p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding-left: 1rem;
+        padding-top: 1rem;
+      }
+
+      #compose-form {
+        width: 55rem;
+        margin: 1rem auto;
+
+        .form-control {
+          width: 55rem;
+          height: calc(1.5em + 0.75rem + 2px);
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 1.5;
+          color: #495057;
+          background-color: #fff;
+          background-clip: padding-box;
+          outline: 1px solid #e5e4e2;
+          border: none;
+          transition: border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+          padding: 0;
+          text-indent: 7px;
+          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
+            0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        textarea {
+          min-height: 200px;
+        }
+
+        .send-btn {
+          @include button-style;
+          width: 8rem;
+          margin-top: 1rem;
+
+          @include hover-effect($send-btn-color);
+          &:hover {
+            margin-left: 3px;
+            outline: thick double $outline;
+          }
+
+          a {
+            text-decoration: none;
+            color: #000;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 8vh;
+  bottom: 0;
+  position: relative;
+  background-color: #7d0a0a;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* background-color: blue; */
+
+  .footer_copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.read {
+  cursor: pointer;
+  font-weight: 400;
+  background-color: #e5e4e2;
+}
+
+.unread {
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #848884;
+}
+
+// Scroll-Bar
+
+/* For WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7d0a0a;
+  // border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f3edc8;
+  // border-radius: 1rem;
+}
+
+/* For Firefox */
+* {
+  scrollbar-color: #a0a0a0 #f0f0f0;
+  scrollbar-width: thin;
+}
+
+/* You can use the following to style the scrollbar thumb in Firefox */
+*::-moz-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+/* You can use the following to style the scrollbar track in Firefox */
+*::-moz-scrollbar-track {
+  border-radius: 10px;
+}
+
+// Original code...
+
+// Mobile
+@media only screen and (max-width: 600px) {
+  section {
+    .view {
+      margin: 0;
+    }
+
+    // Add additional mobile-specific styles as needed...
+  }
+
+  #email-detail-view {
+    width: 100%;
+  }
+
+  #compose-view {
+    width: 100%;
+  }
+
+  // Add additional mobile-specific styles as needed...
+}
+
+// Tablet
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .action-btn {
+    width: 6rem;
+  }
+
+  #compose-view {
+    width: 80%;
+  }
+
+  // Add additional tablet-specific styles as needed...
+}
+
+// Laptop
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  // Add laptop-specific styles as needed...
+
+  // No specific changes in the original code...
+}
+
+// Desktop
+@media only screen and (min-width: 1441px) {
+  // Add desktop-specific styles as needed...
+
+  // No specific changes in the original code...
+}
+
+// Original code...

@@ -1,0 +1,135 @@
+.mark-as-read-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.mark-as-read-btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+.mark-as-read-btn:hover {
+  outline: thick double #003366;
+  /* border-radius: 2rem; */
+  color: #fff;
+  /* border-color: #007bff; */
+  background-color: #003366;
+}
+
+.mark-as-read-btn a:hover {
+  color: #fff;
+}
+
+.mark-as-imp-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.mark-as-imp-btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+.mark-as-imp-btn:hover {
+  outline: thick double #003366;
+  /* border-radius: 2rem; */
+  color: #fff;
+  /* border-color: #007bff; */
+  background-color: #003366;
+}
+
+.mark-as-imp-btn a:hover {
+  color: #fff;
+}
+
+.spam-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.spam-btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+.spam-btn:hover {
+  outline: thick double #bb2124;
+  /* border-radius: 2rem; */
+  color: #fff;
+  /* border-color: #007bff; */
+  background-color: #bb2124;
+}
+
+.spam-btn a:hover {
+  color: #fff;
+}
+
+
+.arch-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.arch-btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+.arch-btn:hover {
+  outline: thick double #003366;
+  /* border-radius: 2rem; */
+  color: #fff;
+  /* border-color: #007bff; */
+  background-color: #003366;
+}
+
+.arch-btn a:hover {
+  color: #fff;
+}
+
+.del-btn {
+  font-weight: 600;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.del-btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+.del-btn:hover {
+  outline: thick double #bb2124;
+  /* border-radius: 2rem; */
+  color: #fff;
+  border-color: #007bff;
+  background-color: #bb2124;
+}
+
+.del-btn a:hover {
+  color: #fff;
+}

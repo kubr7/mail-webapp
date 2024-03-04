@@ -1,0 +1,61 @@
+{% extends "mail/layout.html" %}
+{% load static %}
+
+{% block section %}
+    <div class="view">    
+        <div class="menu-buttons">
+            <div class="nav-btn1">
+                <button class="menu-btn action-btn" id="compose">Compose</button>
+                <button class="menu-btn action-btn" id="inbox">Inbox</button>
+                <button class="menu-btn action-btn" id="sent">Sent</button>
+                <button class="menu-btn action-btn" id="archived">Archived</button>
+            </div>
+            <div class="nav-btn2">
+                <button class="menu-btn action-btn" id="logout"><a id="link" href="{% url 'logout' %}">Log Out</a></button>
+            </div>
+        </div>
+        <hr>
+        <div id="actions" style="display:none">
+            <div class="actions-btn1">
+                <button class="mark-as-read-btn action-btn" id="markAsRead" onclick="markAsRead()">Mark as Read</button>
+                <button class="mark-as-imp-btn action-btn" id="markAsImp" onclick="markAsImp()">Mark as Important</button>
+                <button class="spam-btn action-btn" id="spam" onclick="spam()">Report as Spam</button>
+            </div>
+            <div class="actions-btn2">
+                <button class="arch-btn action-btn" id="archive" onclick="archive()">Archive</button>
+                <button class="del-btn action-btn" id="delete" onclick="del()">Delete</button>
+                <button class="selectAll-btn action-btn" id="selectAll">Select All</button>
+            </div>
+            <!-- Add more action buttons as needed -->
+        </div>  
+        <div id="emails-views">
+            <div id="emails-view">
+            </div>
+            <div id="eachEmails-views">
+            </div>
+        </div>
+    
+        <div id="email-detail-view">
+        </div>
+    
+        <div id="compose-view">
+            <p>New Email</p>
+            <div class="compose-msg">
+                <form id="compose-form">
+                    {% comment %} <div class="form-group">
+                        <label for="inputField" class="label">From:</label>
+                        <input type="text" class="form-control" id="inputField" value="{{ request.user.email }}" disabled>
+                    </div> {% endcomment %}
+                    <div class="form-group">
+                        <input id="compose-recipients" class="form-control" placeholder="Recipients" onfocus="changePlaceholder()">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="compose-subject" placeholder="Subject">
+                    </div>
+                    <textarea class="form-control" id="compose-body"></textarea>
+                    <input class="send-btn" id="submit-button" value="Send" type="submit"/>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
